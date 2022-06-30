@@ -11,7 +11,7 @@
     </parent>
     <groupId>io.github.zhx666666</groupId>
     <artifactId>uploadImgToGithub-springboot-starter</artifactId>
-    <version>1.0</version>
+    <version>1.0-RELEASE</version>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -19,7 +19,12 @@
     </properties>
     <description>github images merge springboot</description>
     <url>https://github.com/zhx666666/uploadImgToGithub-springboot-starter</url>
-
+    <developers>
+        <developer>
+            <name>abilities</name>
+            <email>abilites@163.com</email>
+        </developer>
+    </developers>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -79,11 +84,7 @@
         <tag>1.0</tag>
     </scm>
 
-    <developers>
-        <developer>
-            <name>first push to code cloud</name>
-        </developer>
-    </developers>
+
 
     <profiles>
         <profile>
@@ -189,16 +190,28 @@
                 </plugins>
             </build>
             <!-- 这个也是必须要的 以下两个<id>代码块中的id要与 setting.xml中的id一致 -->
+<!--            <distributionManagement>-->
+<!--                <snapshotRepository>-->
+<!--                    <id>OSSRH-82203</id>-->
+<!--                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>-->
+<!--                </snapshotRepository>-->
+<!--                <repository>-->
+<!--                    <id>OSSRH-82203</id>-->
+<!--                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>-->
+<!--                </repository>-->
+<!--            </distributionManagement>-->
             <distributionManagement>
                 <snapshotRepository>
                     <id>oss</id>
-                    <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+                    <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
                 </snapshotRepository>
                 <repository>
                     <id>oss</id>
-                    <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+                    <url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2/</url>
                 </repository>
             </distributionManagement>
+<!--            mvn clean deploy -P release -Dmaven.test.skip=true -Dgpg.passphrase=zhao0507-->
+
         </profile>
     </profiles>
 </project>
