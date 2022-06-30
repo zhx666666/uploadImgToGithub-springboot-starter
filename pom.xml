@@ -9,7 +9,7 @@
         <version>2.5.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.github</groupId>
+    <groupId>io.github.zhx666666</groupId>
     <artifactId>uploadImgToGithub-springboot-starter</artifactId>
     <version>1.0</version>
 
