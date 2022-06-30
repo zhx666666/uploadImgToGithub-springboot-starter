@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+top.abilities.config.GithubImgConfig,top.abilities.config.GitHubInitConfig,top.abilities.client.ImageUploadToGithubClient
